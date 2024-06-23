@@ -8,7 +8,7 @@ An AFK Script for Superiorserver.co Garrysmod server
 3. In powershell/cmd navigate to the script directory
 4. Run either "python .\afk_textmode.py" or "python .\afk.py"
 
-afk_textmode.py will start garrysmod in textmode to reduce ressource utilization
+afk_textmode.py will start garrysmod in textmode to reduce ressource utilization 
 afk.py will send commands to any open gmod instance
 
 If necessary adjust paths in main.py
