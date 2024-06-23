@@ -27,9 +27,8 @@ def say_poop():
 
 def start_game():
     """Starts the game with specified parameters before running the main script."""
-    hl2_path = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\GarrysMod\\hl2.exe"
     params = "-64bit -textmode -single_core -nojoy -low -nosound -sw -noshader -nopix -novid -nopreload -nopreloadmodels -multirun +connect rp.superiorservers.co"
-    cmd_line = f'"{hl2_path}" {params}'
+    cmd_line = f'"{gmod_path}" {params}'
     try:
         subprocess.run(cmd_line, check=True, shell=True)
         print("Game started successfully.")
