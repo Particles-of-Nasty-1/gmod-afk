@@ -20,11 +20,6 @@ def action(command):
     time.sleep(random.uniform(0.01, 0.05))
     run_command(f"-{command}")
 
-def say_poop():
-    """Simulate saying /poop."""
-    run_command('say /poop')
-    run_command("echo Pooped!")
-
 def start_game():
     """Starts the game with specified parameters before running the main script."""
     params = "-64bit -textmode -single_core -nojoy -low -nosound -sw -noshader -nopix -novid -nopreload -nopreloadmodels -multirun +connect rp.superiorservers.co"
@@ -47,7 +42,8 @@ def main():
 
         # Check if it's time to say /poop
         if current_time - last_poop_time >= 11:
-            say_poop()
+            """Simulate saying /poop."""
+            run_command("rp poop; echo Pooped!")
             last_poop_time = current_time
             poop_count += 1  # Increment the poop count
 
