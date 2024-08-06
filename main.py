@@ -22,7 +22,7 @@ def action(command):
 
 def start_game():
     """Starts the game with specified parameters before running the main script."""
-    params = "-64bit -textmode -single_core -nojoy -low -nosound -sw -noshader -nopix -novid -nopreload -nopreloadmodels -multirun +connect rp.superiorservers.co"
+    params = "-64bit -single_core -nojoy -low -nosound -sw -noshaderapi -nopix -novid -nopreload -nopreloadmodels -multirun -windowed -h 200 -w 200 +connect rp.superiorservers.co +snd_mute_losefocus 1"
     cmd_line = f'"{gmod_path}" {params}'
     try:
         subprocess.run(cmd_line, check=True, shell=True)
@@ -35,7 +35,7 @@ def main():
     last_poop_time = time.time()
     start_time = time.time()  # Track the start time
     last_print_time = start_time  # Track the last print time
-    poop_count = 0  # Track the number of times say_poop has been executed
+    poop_count = 0  # Track the number of times rp poop has been executed
 
     while True:
         current_time = time.time()
