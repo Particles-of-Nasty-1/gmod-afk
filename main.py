@@ -41,7 +41,7 @@ def main():
         current_time = time.time()
 
         # Check if it's time to say /poop
-        if current_time - last_poop_time >= 11:
+        if current_time - last_poop_time >= 31:
             """Simulate saying /poop."""
             run_command("rp poop; echo Pooped!")
             last_poop_time = current_time
